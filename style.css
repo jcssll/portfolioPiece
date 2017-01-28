@@ -3,6 +3,79 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
+ /* RESET */
+#contact_form * { box-sizing: border-box; }
+
+/* GRID */
+.col-2 {
+    float: left;
+    padding: 0 20px;
+    width: 50%;
+}
+
+/* BASIC CONTACT FORM CSS */
+#contact_form input,
+#contact_form textarea {
+    height: 45px;
+    line-height: 1.4em;
+    padding-left: 20px; /* Change this to fit your label text width */
+    width: 100%;
+}
+#contact_form textarea {
+    padding: 20px;
+}
+#contact_form label {
+    display: inline-block;
+    height: 45px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+}
+#contact_form label input {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#contact_form label span {
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 200;
+    position: absolute;
+    left: 10px;
+    top: 13px;
+    padding: 0 8px;
+    pointer-events: none;
+}
+#contact_form .populated {
+    padding-left: 70px;
+}
+#contact_form input:focus + span,
+#contact_form input:active + span,
+#contact_form textarea:focus + span,
+#contact_form textarea:active + span {
+    top: -9px; /* Change this to fit your label text width */
+}
+#contact_form input[type="submit"] {
+  clear: both;
+  display: block;
+  height: auto;
+  padding: 0;
+  width: auto;
+}
+/* ANIMATION */
+#contact_form label input {
+    transition: padding 0.3s ease 0s;
+}
+#contact_form label span {
+    transition: top 0.3s ease 0s, color 0.3s ease 0s;
+}
+#contact_form input:focus,
+#contact_form textarea:focus {
+    transition: all 0.3s ease;
+}
+
 
  body {
   font-family:arial;  
@@ -464,6 +537,7 @@ section h3.section-subheading {
     text-transform: none;
 }
 
+
 /*#portfolio .portfolio-item {
     right: 0;
     margin: 0 0 15px;
@@ -761,7 +835,7 @@ section h3.section-subheading {
     margin-top: 0;
 }*/
 
-
+/*
 section#contact {
     background-color: #222;
     background-image: url(images/hire2.jpg
@@ -826,7 +900,9 @@ section#contact:-ms-input-placeholder {
 
 section#contact .text-danger {
     color: #e74c3c;
-}
+}*/
+
+
 
 footer {
     padding: 25px 0;

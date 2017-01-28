@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="style.css">
    <script src="jquery-1.3.1.min.js"></script>
     <script src="jquery.easing.1.3.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="./openDoors.js"></script>
   <script src="./script.js"></script>
+  <script src="./contact.js"></script>
 
   
 
@@ -275,11 +277,11 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="images/FOCUS.PNG" alt="">
+                                <img class="img-circle img-responsive" src="images/hire.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Full Stack Web Developer</h4>
+                                    <h4>Web Developer</h4>
                                     <h4 class="subheading">Joshua F. Cassell III</h4>
                                 </div>
                                 <div class="timeline-body">
@@ -414,9 +416,32 @@ Prove that you know what you’re talking about (prove your credibility) by talk
 
     <!-- Clients Aside -->
    
-
+ 
     <section id="contact">
-        <div class="container">
+    <div id="contact_form">
+        <div class="col-2">
+            <label>
+                <input type="text" tabindex="1" name="name">
+                <span>Name:</span>
+            </label>
+            <label>
+                <input type="email" tabindex="2" name="email">
+                <span>Email:</span>
+            </label>
+            <label>
+                <input type="text" tabindex="3" name="subject">
+                <span>Subject:</span>
+            </label>
+        </div>
+        <div class="col-2">
+            <label>
+                <textarea tabindex="4" name="message"></textarea>
+                <span>Message:</span>
+            </label>
+        </div>
+        <input type="submit" tabindex="5" value="Send">
+    </div>
+        <!-- <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Contact Us</h2>
@@ -456,8 +481,31 @@ Prove that you know what you’re talking about (prove your credibility) by talk
                     </form>
                 </div>
             </div>
+        </div> -->
+    </section> -->
+   <!--  <div id="contact_form">
+        <div class="col-2">
+            <label>
+                <input type="text" tabindex="1" name="name">
+                <span>Name:</span>
+            </label>
+            <label>
+                <input type="email" tabindex="2" name="email">
+                <span>Email:</span>
+            </label>
+            <label>
+                <input type="text" tabindex="3" name="subject">
+                <span>Subject:</span>
+            </label>
         </div>
-    </section>
+        <div class="col-2">
+            <label>
+                <textarea tabindex="4" name="message"></textarea>
+                <span>Message:</span>
+            </label>
+        </div>
+        <input type="submit" tabindex="5" value="Send">
+    </div> -->
 
     <footer>
         <div class="container">
@@ -491,7 +539,7 @@ Prove that you know what you’re talking about (prove your credibility) by talk
     <!-- Use the modals below to showcase details about your portfolio projects! -->
 
     <!-- Portfolio Modal 1 -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <!--   <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -503,8 +551,8 @@ Prove that you know what you’re talking about (prove your credibility) by talk
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <!-- Project Details Go Here -->
-                            <h2>Project Name</h2>
+                            <!- Project Details Go Here -->
+                            <!-- <h2>Project Name</h2>
                             <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                             <img class="img-responsive" src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" alt="">
                             <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -521,7 +569,7 @@ Prove that you know what you’re talking about (prove your credibility) by talk
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Portfolio Modal 2 -->
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
@@ -656,7 +704,7 @@ Prove that you know what you’re talking about (prove your credibility) by talk
             </div>
         </div>
     </div>
-
+ -->
     <!-- jQuery Version 1.11.0 
     <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
 
