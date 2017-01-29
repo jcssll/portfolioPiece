@@ -35,7 +35,7 @@
 #contact_form label input {
     width: 100%;
     position: absolute;
-    top: 0;
+        top: 0;
     left: 0;
 }
 #contact_form label span {
